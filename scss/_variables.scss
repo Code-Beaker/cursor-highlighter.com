@@ -1,0 +1,23 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+// Variables File
+$font-family: (
+    "sans-serif": 'Poppins',
+    "special": 'Staatliches',
+    "monospace": monospace
+);
+
+$font-weight: (
+    "light": 100,
+    "regular": 400,
+    "bold": 700,
+    "bolder": 800
+);
+
+$colors: (
+    "accent": #d23,
+    "accent-dark": rgb(180, 25, 38),
+    "dark": #303030,
+    "light": #fff
+);

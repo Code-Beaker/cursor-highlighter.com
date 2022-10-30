@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Staatliches&display=swap");
+body {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.top-arrow {
+  -webkit-animation-name: pop;
+          animation-name: pop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pop {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.navcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navcontainer .navlogo {
+  text-decoration: none;
+  color: #d23;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 15px 10px;
+}
+.navcontainer nav ul {
+  display: flex;
+  list-style: none;
+}
+.navcontainer nav ul li {
+  margin: 1em;
+}
+.navcontainer nav ul li a {
+  color: #303030;
+  text-decoration: none;
+}
+.navcontainer nav ul li #active {
+  color: #d23;
+}
+.navcontainer nav ul li #active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: #d23;
+}
+.navcontainer nav ul li .navlink {
+  transition: 200ms ease-in-out;
+}
+.navcontainer nav ul li .navlink:hover {
+  color: #d23;
+}
+.navcontainer nav ul li .navlink::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  background: #d23;
+  transition: 200ms ease-in-out;
+}
+.navcontainer nav ul li .navlink:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: #d23;
+  transition: 200ms ease-in-out;
+}
+
+section {
+  padding: 2em 3em;
+}
+section img {
+  width: 800px;
+}
+section b {
+  color: #d23;
+}
+section #link {
+  color: #303030;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  transition: 200ms ease-in-out;
+}
+section #link:hover {
+  color: #d23;
+}
+section #link::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  display: block;
+  background: #d23;
+  transition: 200ms ease-in-out;
+}
+section #link:hover::after {
+  width: 100%;
+}
+section .link {
+  color: #d23;
+  text-decoration: none;
+}
+section .link i {
+  transition: 200ms ease-in-out;
+}
+section .link:hover {
+  color: rgb(180, 25, 38);
+  transform: translateX(5px);
+}
+section .link:hover i {
+  color: rgb(180, 25, 38);
+  transform: translateX(5px);
+}
+section .btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #d23;
+  transition: 200ms ease-in-out;
+}
+section .btn:hover {
+  background: rgb(180, 25, 38);
+}
+
+.top-arrow {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  background: #d23;
+  position: fixed;
+  top: 85%;
+  left: 90%;
+  bottom: 5%;
+  transition: 200ms ease-in-out;
+}
+
+.top-arrow:hover {
+  background: rgb(180, 25, 38);
+}
+
+footer {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
